@@ -1,0 +1,26 @@
+.contact-page .c-page-h2 {
+    width: 40vw;
+    font-family: "Fenix", serif;
+    font-size: 32px;
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
+    color: var(--sBackground);
+    margin: 80px 10vw 15px;
+}
+
+@media (max-width: 1150px) {
+    .contact-page .c-page-h2 {
+        width: 70%;
+        text-align: center;
+        font-size: 30px;
+        margin: 80px auto 25px;
+    }
+}
+
+@media (max-width: 685px) {
+    .contact-page .c-page-h2 {
+        width: 75%;
+        font-size: 25px;
+        margin: 55px auto 15px;
+        color: rgb(225, 225, 225);
+    }
+}

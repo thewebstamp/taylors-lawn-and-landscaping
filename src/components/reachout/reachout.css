@@ -1,0 +1,196 @@
+.reachout-comp {
+    padding: 50px 10vw 160px;
+    display: flex;
+    background: var(--sBackground);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reachout-comp .r-top {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    filter: blur(15px);
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 0.6s;
+}
+.reachout-comp .r-top.slide-up {
+    filter: blur(0);
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+.r-top .r-headline {
+    font-family: "Fenix", serif;
+    font-weight: 600;
+    font-size: 13.5px;
+    letter-spacing: 4px;
+    color: green;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.r-top h2 {
+    font-family: "Fenix", serif;
+    font-size: 32px;
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
+    color: var(--background);
+    margin: 5px 0 0;
+}
+
+.r-top p {
+    font-family: "Josefin Sans", serif;
+    font-weight: 400;
+    font-size: 21.5px;
+    line-height: 21px;
+    color: black;
+    margin: 10px 0 35px;
+}
+.r-top p span {
+    font-size: 20.5px;
+    font-weight: 600;
+}
+
+.r-top a {
+    width: fit-content;
+    padding: 10px 25px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 7px rgba(2, 0, 0, 0.3);
+    font-family: "Outfit", serif;
+    font-weight: 500;
+    font-size: 20.5px;
+    letter-spacing: 0.5px;
+    background: green;
+    color: var(--sBackground);
+    transition: 0.5s;
+}
+
+.reachout-comp .r-base {
+    position: relative;
+    width: 48%;
+    filter: blur(15px);
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 0.6s;
+}
+.reachout-comp .r-base.slide-up {
+    filter: blur(0);
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+.r-base .r-image-design {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    background: var(--background);
+}
+
+.r-base img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 92%;
+    border: 5px solid var(--sBackground);
+    border-radius: 15px;
+}
+.r-base img.r-base-height {
+    visibility: hidden;
+    position: relative;
+    width: 100%;
+    border-radius: 15px;
+}
+
+@media (max-width: 1150px) {
+    .reachout-comp {
+        padding: 50px 10vw 100px;
+        flex-direction: column;
+        gap: 75px;
+        text-align: center;
+    }
+    
+    .reachout-comp .r-top {
+        width: 100%;
+    }
+    
+    .r-top .r-headline {
+        width: 80%;
+        margin: auto;
+        font-size: 11.5px;
+    }
+    
+    .r-top h2 {
+        width: 80%;
+        margin: auto;
+        font-size: 30px;
+    }
+    
+    .r-top p {
+        font-size: 20.5px;
+        margin: 6px 0 25px;
+    }
+    .r-top p span {
+        font-size: 19px;
+    }
+    
+    .r-top a {
+        margin: auto;
+        padding: 7px 20px;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+    
+    .reachout-comp .r-base {
+        width: min(440px, 65%);
+    }
+    
+    .r-base .r-image-design {
+        width: 80px;
+        height: 80px;
+        border-radius: 15px;
+    }
+    
+    .r-base img {
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 685px) {
+    .reachout-comp {
+        padding: 50px 0vw 100px;
+        gap: 60px;
+    }
+    
+    .r-top {
+        padding: 0 7vw;
+    }
+    
+    .r-top .r-headline {
+        width: 100%;
+        font-size: 11px;
+        letter-spacing: 3px;
+    }
+    
+    .r-top h2 {
+        width: 100%;
+        font-size: 27.5px;
+    }
+    
+    .r-top p {
+        margin: 6px 0 25px;
+    }
+    .r-top p span {
+        font-size: 19px;
+    }
+    
+    .reachout-comp .r-base {
+        width: min(430px, 95%);
+    }
+    
+    .r-base .r-image-design {
+        width: 65px;
+        height: 65px;
+    }
+}

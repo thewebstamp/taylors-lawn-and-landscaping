@@ -1,0 +1,212 @@
+.contact-comp {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.contact-comp .cc-top {
+    width: 45%;
+    padding: 0 50px 0 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    background: hsla(0, 0%, 0%, 0.75);
+}
+
+.cc-top .cc-headline {
+    font-family: "Fenix", serif;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 4px;
+    color: var(--accent);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
+    animation: slide-up 0.6s linear;
+}
+
+.cc-top h2 {
+    font-family: "Fenix", serif;
+    font-size: 33px;
+    color: var(--sBackground);
+    margin: 5px 0 0;
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
+    animation: slide-up 0.6s linear;
+}
+
+.contact-comp .cc-info {
+    margin-top: 30px;
+    animation: slide-up 0.6s linear;
+}
+
+.cc-item hr {
+    border: none;
+    height: 1px;
+    background: var(--sBackground-shade);
+    width: 85%;
+}
+
+.cc-item .ic-info {
+    padding: 13px 0;
+    display: flex;
+    gap: 20px;
+}
+
+.cc-item .ic-info p {
+    font-family: "Josefin Sans", serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(216, 216, 216);
+    margin: 10px 0 15px;
+}
+
+.cc-item .ic-info a {
+    font-family: "Josefin Sans", serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--sBackground);
+    color: #d1bfa8;
+    height: fit-content;
+}
+
+.ic-info a .ci-icon {
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 50%;
+    background: var(--sBackground);
+    color: var(--background);
+}
+
+.contact-comp .cc-base {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.cc-base img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cc-socials {
+    position: absolute;
+    z-index: 1;
+    bottom: 170px;
+    right: 10vw;
+    display: flex;
+    gap: 10px;
+}
+
+.cc-socials a .ccs-icon {
+    width: 22px;
+    height: 22px;
+    font-size: 18px;
+    color: var(--background);
+    background: var(--sBackground);
+    padding: 11px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+@media (max-width: 1150px) {
+    .contact-comp .cc-top {
+        padding: 0 7vw 0;
+        width: 75%;
+    }
+    
+    .cc-top .cc-headline {
+        font-size: 11px;
+        text-align: center;
+        margin: -30px auto 0;
+        width: 60%;
+    }
+    
+    .cc-top h2 {
+        margin: 5px auto 0;
+        width: 80%;
+        font-size: 29px;
+        text-align: center;
+    }
+    
+    .contact-comp .cc-info {
+        width: fit-content;
+        margin: 35px auto 0;
+    }
+
+    .cc-info .cc-item {
+        width: 100%;
+        margin: auto;
+    }
+    
+    .cc-item hr {
+        height: 0.5px;
+        width: 100%;
+    }
+    
+    .cc-item .ic-info {
+        padding: 13px 10px;
+        gap: 15px;
+    }
+    
+    .cc-item .ic-info p {
+        font-size: 18.5px;
+        margin: 5px 0 8px;
+    }
+    
+    .cc-item .ic-info a {
+        font-size: 19px;
+        height: fit-content;
+    }
+    
+    .ic-info a .ci-icon {
+        font-size: 13px;
+        padding: 10px;
+    }
+    
+    .cc-base img {
+        object-position: right;
+    }
+    
+    .cc-socials a .ccs-icon {
+        width: 25px;
+        height: 25px;
+        font-size: 18px;
+        padding: 9px;
+    }
+}
+
+@media (max-width: 685px) {
+    .contact-comp .cc-top {
+        width: 85%;
+    }
+    
+    .cc-top .cc-headline {
+        font-size: 10.5px;
+        margin: -20px auto 0;
+        width: 100%;
+        letter-spacing: 3px;
+    }
+    
+    .cc-top h2 {
+        width: 100%;
+        font-size: 27px;
+        color: rgb(224, 224, 224);
+    }
+    
+    .contact-comp .cc-info {
+        margin: 35px auto 0;
+        width: 100%;
+    }
+    
+    .cc-item .ic-info {
+        padding: 13px 10px;
+        gap: 15px;
+    }
+
+    .cc-socials {
+        bottom: 15px;
+    }
+}

@@ -1,0 +1,224 @@
+.set-apart-wrap {
+    padding: 80px 10vw;
+    display: flex;
+    justify-content: space-between;
+    background: var(--sBackground);
+}
+
+.set-apart-wrap .sa-top {
+    width: 55%;
+    filter: blur(15px);
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 0.6s;
+}
+.set-apart-wrap .sa-top.slide-up {
+    filter: blur(0);
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+.sa-top .sa-headline {
+    font-family: "Fenix", serif;
+    font-weight: 600;
+    font-size: 13.5px;
+    letter-spacing: 4px;
+    color: green;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.sa-top h2 {
+    font-family: "Fenix", serif;
+    font-size: 32px;
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
+    color: rgb(27, 27, 27);
+    margin: 5px 0 0;
+}
+
+.sa-top .sa-cards {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.sa-cards .card {
+    display: flex;
+    padding: 17px 0;
+    background: var(--background);
+    border-radius: 12px;
+}
+
+.card .icon {
+    font-size: 22px;
+    color: var(--sBackground);
+    padding: 0 15px;
+}
+
+.card .vert-line {
+    width: 1px;
+    height: 100%;
+    background: rgb(214, 214, 214);
+}
+
+.card .text {
+    padding: 0 20px 0 15px;
+}
+
+.text h3 {
+    font-family: "Outfit", serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--sBackground);
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+.text p {
+    font-family: "Josefin Sans", serif;
+    font-weight: 300;
+    font-size: 19px;
+    color: rgb(214, 214, 214);
+}
+
+.set-apart-wrap .sa-base {
+    position: relative;
+    width: 45%;
+    filter: blur(15px);
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 0.6s;
+}
+.set-apart-wrap .sa-base.slide-up {
+    filter: blur(0);
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+.sa-base .sa-img-design {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 2.5%;
+    background: var(--background);
+    border-radius: 15px;
+    
+}
+
+.sa-base .sa-img {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    width: 93%;
+    border-radius: 15px;
+    border: 5px solid var(--sBackground);
+}
+
+.sa-base .sa-img-height {
+    width: 100%;
+    visibility: hidden;
+}
+
+@media (max-width: 1150px) {
+    .set-apart-wrap {
+        padding: 65px 10vw;
+        flex-direction: column;
+        align-items: center;
+        gap: 45px;
+    }
+    
+    .set-apart-wrap .sa-top {
+        width: 100%;
+    }
+    
+    .sa-top .sa-headline {
+        font-size: 11.5px;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .sa-top h2 {
+        width: 80%;
+        font-size: 30px;
+        margin: 5px auto 0;
+        text-align: center;
+    }
+    
+    .sa-top .sa-cards {
+        margin-top: 25px;
+        gap: 10px;
+    }
+    
+    .card .icon {
+        font-size: 18px;
+    }
+    
+    .text h3 {
+        font-size: 19.5px;
+    }
+    
+    .text p {
+        font-size: 18.5px;
+    }
+    
+    .set-apart-wrap .sa-base {
+        width: 75%;
+    }
+    
+    .sa-base .sa-img-design {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .sa-base .sa-img {
+        width: 90%;
+        border: 4px solid var(--sBackground);
+    }
+}
+
+@media (max-width: 685px) {
+    .set-apart-wrap {
+        padding: 55px 0;
+        gap: 50px;
+    }
+    
+    .sa-top {
+        padding: 0 7vw;
+    }
+    
+    .sa-top .sa-headline {
+        font-size: 11px;
+        width: 100%;
+    }
+    
+    .sa-top h2 {
+        width: 100%;
+        font-size: 27.5px;
+    }
+    
+    .sa-top .sa-cards {
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+        gap: 8px;
+    }
+    
+    .text h3 {
+        font-size: 19.5px;
+    }
+    
+    .set-apart-wrap .sa-base {
+        width: 95%;
+    }
+    
+    .sa-base .sa-img-design {
+        width: 70px;
+        height: 70px;
+        left: 0;
+    }
+    
+    .sa-base .sa-img {
+        width: 94%;
+    }
+}

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Fenix&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Outfit:wght@100..900&display=swap');
+
+:root {
+  --sButton-alt: linear-gradient(90deg, #00007C, #0600F8);
+  --sButton-alt: hsl(195, 95%, 30%);
+  --sButton: hsl(195, 95%, 40%);
+  --sText: whitesmoke;
+  --sBackground: #e3e3e3;
+  --sBackground-shade: rgb(133, 133, 133);
+  --sBackground-alt: linear-gradient(90deg, hsl(0, 0%, 3%), hsl(0, 0%, 0%));
+  --headerT: hsl(240, 100%, 20%);
+  --headerT-alt: #0600F8;
+  --headerT-alt: hsl(195, 95%, 40%);
+  --accent: #8CC540;
+  --black: black;
+  --background: rgb(34, 34, 34);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-right {
+  from {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slide-left {
+  from {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0px);
+  }
+}

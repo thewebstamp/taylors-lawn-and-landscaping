@@ -1,0 +1,219 @@
+.portfolio-comp {
+    padding: 80px 10vw;
+    background: var(--background);
+    color: var(--sText);
+    filter: blur(15px);
+    opacity: 0;
+    transition: 1s;
+}
+.portfolio-comp.slide-up {
+    filter: blur(0);
+    opacity: 1;
+  }
+
+.portfolio-comp .p-headline {
+    font-family: "Fenix", serif;
+    font-weight: 600;
+    font-size: 13.5px;
+    letter-spacing: 4px;
+    color: var(--accent);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.portfolio-comp h2 {
+    width: 45%;
+    font-family: "Fenix", serif;
+    font-size: 32px;
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
+    margin: 5px 0 0;
+}
+.portfolio-comp .portfolio-images {
+    margin-top: 30px;
+    overflow-x: hidden;
+}
+
+.portfolio-images .image-wrap {
+    width: 100%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+.portfolio-images .image-wrap::-webkit-scrollbar {
+    display: none;
+}
+
+.image-wrap .p-imgs {
+    width: fit-content;
+    display: flex;
+    gap: 30px;
+}
+
+.p-imgs img {
+    width: min(370px, 24vw);
+    border-radius: 15px;
+    border: 2px solid var(--sBackground-shade);
+}
+
+.p-slide-left {
+    animation: p-slide-left 0.4s linear;
+}
+.p-slide-right {
+    animation: p-slide-right 0.4s linear;
+}
+
+@keyframes p-slide-left {
+    from {
+        transform: translateX(calc(30px + min(370px, 24vw)));
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+@keyframes p-slide-right {
+    from {
+        transform: translateX(calc(-30px - min(370px, 24vw)));
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.portfolio-comp .p-base {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0 0;
+}
+
+.p-base .controls {
+    display: flex;
+    gap: 10px;
+}
+
+#p-control-l, #p-control-r {
+    width: 17px;
+    height: 17px;
+    padding: 13px;
+    border-radius: 50%;
+    border: 2px solid var(--sBackground);
+    cursor: pointer;
+    transition: 0.5s;
+    background: transparent;
+    color: var(--sText);
+}
+#p-control-l:hover, #p-control-r:hover {
+    background: var(--sBackground);
+    color: var(--background);
+}
+
+.p-base a {
+    padding: 9px 25px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 7px rgba(2, 0, 0, 0.3);
+    font-family: "Outfit", serif;
+    font-weight: 600;
+    font-size: 20.5px;
+    letter-spacing: 0.5px;
+    background: green;
+    color: var(--sBackground);
+    transition: 0.5s;
+}
+
+@media (max-width: 1150px) {
+    .portfolio-comp {
+        padding: 65px 10vw;
+        text-align: center;
+    }
+    
+    .portfolio-comp .p-headline {
+        font-size: 11.5px;
+    }
+    
+    .portfolio-comp h2 {
+        width: 80%;
+        font-size: 30px;
+        margin: auto;
+    }
+    .portfolio-comp .portfolio-images {
+        margin-top: 35px;
+    }
+    
+    .p-imgs img {
+        width: min(300px, 37vw);
+        border-radius: 10px;
+        border: 1.5px solid var(--sBackground-shade);
+    }
+    
+    @keyframes p-slide-left {
+        from {
+            transform: translateX(calc(30px + min(300px, 37vw)));
+        }
+    }
+    @keyframes p-slide-right {
+        from {
+            transform: translateX(calc(30px + min(300px, 37vw)));
+        }
+    }
+    
+    .portfolio-comp .p-base {
+        margin: 20px 0 0;
+    }
+    
+    #p-control-l, #p-control-r {
+        width: 16px;
+        height: 16px;
+        padding: 9px;
+    }
+    
+    .p-base a {
+        padding: 7px 20px;
+        border-radius: 10px;
+        font-size: 18.5px;
+    }
+}
+
+@media (max-width: 685px) {
+    .portfolio-comp {
+        padding: 55px 7vw;
+    }
+    
+    .portfolio-comp .p-headline {
+        font-size: 11px;
+        letter-spacing: 3px;
+    }
+    
+    .portfolio-comp h2 {
+        width: 100%;
+        font-size: 27.5px;
+        color: rgb(215, 215, 215);
+    }
+    
+    .p-imgs img {
+        width: min(280px, 85vw);
+        border: 1px solid var(--sBackground-shade);
+    }
+    
+    @keyframes p-slide-left {
+        from {
+            transform: translateX(calc(30px + min(280px, 85vw)));
+        }
+    }
+    @keyframes p-slide-right {
+        from {
+            transform: translateX(calc(30px + min(3280px, 85vw)));
+        }
+    }
+    
+    .portfolio-comp .p-base {
+        margin: 15px 0 0;
+        flex-direction: column;
+        gap: 35px;
+    }
+    
+    #p-control-l, #p-control-r {
+        width: 15px;
+        height: 15px;
+        padding: 8px;
+    }
+}

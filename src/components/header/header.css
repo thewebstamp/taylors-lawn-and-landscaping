@@ -1,0 +1,228 @@
+#website-img {
+    display: none;
+}
+
+.header-comp {
+    width: 100%;
+    padding: 8px 5vw;
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--background);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.35);
+}
+
+.header-comp a img {
+    padding-top: 5px;
+    width: 133px;
+}
+
+.header-comp .navigation-right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+.navigation-right .phone-contact {
+    display: flex;
+    align-items: center;
+    text-align: right;
+    font-size: 17px;
+    letter-spacing: 0.8px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    background: var(--sText);
+    width: fit-content;
+    color: var(--background);
+    box-shadow: 3px 3px 4px hsla(0, 0%, 0%, 0.1);
+    transition: 0.5s;
+}
+
+.phone-contact p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.phone-contact .header-phone {
+    margin-right: 10px;
+}
+
+.nav-base ul {
+    list-style: none;
+    display: flex;
+    gap: 43px;
+    font-weight: 600;
+    font-size: 19.5px;
+}
+
+.nav-base ul li::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: whitesmoke;
+    transition: 0.3s;
+}
+
+.nav-base ul li:hover::after {
+    width: 100%;
+}
+
+.nav-base ul li.active::after {
+    width: 100%;
+}
+
+.nav-base ul li a {
+    color: var(--sBackground);
+}
+
+.nav-base .nav-menu  {
+    display: none;
+    position: relative;
+    z-index: 5;
+    font-family: "Josefin Sans", serif;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.nav-menu p {
+    font-family: "Josefin Sans", serif;
+    cursor: pointer;
+    width: fit-content;
+    color: whitesmoke;
+    transition: 0.7s;
+}
+
+@media (max-width: 1150px) {
+    .header-comp {
+        padding: 8px 5vw 4px;
+    }
+    
+    .header-comp a img {
+        padding-top: 0px;
+        width: 110px;
+    }
+    
+    .header-comp .navigation-right {
+        gap: 12px;
+    }
+    
+    .navigation-right .phone-contact {
+        font-size: 13px;
+        letter-spacing: 0.7px;
+        padding: 6px 17px;
+    }
+
+    .phone-contact p {
+        font-size: 18px;
+    }
+    
+    .phone-contact .header-phone {
+        margin-right: 7px;
+    }
+    
+    .nav-base ul {
+        gap: 34px;
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 685px) {
+    .header-comp {
+        padding: 6px 5vw 2px;
+    }
+    
+    .header-comp a img {
+        padding: 1px 0;
+        width: min(30vw, 85px);
+    }
+    
+    .header-comp .navigation-right {
+        gap: 12px;
+    }
+    
+    .navigation-right .phone-contact {
+        height: 100vh;
+        position: absolute;
+        padding: 0;
+        left: 5vw;
+        top: 0;
+        background: none;
+        box-shadow: none;
+        align-items: last baseline;
+    }
+
+    .navigation-right .phone-contact:hover {
+        background: none;
+        box-shadow: none;
+    }
+
+    .phone-contact p {
+        display: none;
+    }
+    
+    .phone-contact .header-phone {
+        margin-right: 7px;
+        font-size: 26px;
+        background: var(--background);
+        color: var(--sText);
+        padding: 10px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+        position: fixed;
+        bottom: 0;
+        border: 2px solid var(--sBackground);
+    }
+
+    .nav-base .navigation {
+        transition: 1s;
+        opacity: 0;
+        filter: blur(5px);
+        position: absolute;
+        z-index: 4;
+        padding: 120px 0 0 40px;
+        top: 0;
+        right: -75vw;
+        width: 70vw;
+        height: 100vh;
+        background: var(--sBackground);
+        box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-base .nav-menu-active {
+        opacity: 1;
+        filter: blur(0);
+        right: 0vw;
+    }
+
+    .nav-base ul {
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+        font-size: 20.5px;
+    }
+
+    .nav-base ul li {
+        width: fit-content;
+    }
+
+    .nav-base ul li::after {
+    background: black;
+}
+
+.nav-base ul li a {
+    color: black;
+}
+
+    .nav-base .nav-menu  {
+        display: block;
+    }
+
+    .nav-base .nav-menu p.menu-close  {
+        color: darkred;
+    }
+}

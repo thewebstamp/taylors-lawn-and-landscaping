@@ -1,0 +1,226 @@
+.footer-comp {
+    position: relative;
+    padding: 60px 5vw 130px;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr 1fr;
+    column-gap: 90px;
+    background: var(--background);
+}
+
+.f-top-1 a {
+    width: fit-content;
+}
+
+.f-top-1 a img {
+    width: 128px;
+}
+
+.f-top-1 p {
+    font-family: "Josefin Sans", serif;
+    font-weight: 400;
+    font-size: 21px;
+    color: var(--accent);
+    color: var(--accent);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.f-top-1 p span {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--sBackground);
+}
+
+.f-top-1 a {
+    font-family: "Josefin Sans", serif;
+    display: block;
+    color: var(--sBackground);
+    font-weight: 300;
+    font-size: 20px;
+    margin-top: 6px;
+}
+.f-top-1 a span {
+    font-family: "Fenix", serif;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.f-top-2 .company, .f-top-3 .social-media {
+    font-family: "Fenix", serif;
+    font-size: 27px;
+    color: var(--sBackground);
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.f-top-2 ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.f-top-2 ul li a {
+    color: var(--sBackground);
+    font-family: "Josefin Sans", serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.f-top-3 .sm-app {
+    display: flex;
+    gap: 10px;
+}
+
+.sm-app .med-app {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--sBackground);
+    border-radius: 50%;
+    color: var(--sBackground);
+    padding: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.sm-app .med-app:hover {
+    color: var(--background);
+    border: 2px solid var(--sBackground-shade);
+    background: var(--sBackground-shade);
+}
+
+.footer-comp .copyright {
+    padding: 30px 5vw;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: var(--sBackground);
+    font-family: "Josefin Sans", serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+@media (max-width: 1150px) {
+    .footer-comp {
+        padding: 50px 5vw 140px;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 110px;
+        row-gap: 45px;
+        text-align: center;
+    }
+
+    .f-top-1 {
+        grid-column: 1 / 3;
+    }
+    
+    .f-top-1 a img {
+        width: 110px;
+    }
+    
+    .f-top-1 p {
+        font-size: 19.5px;
+        margin-bottom: 10.5px;
+    }
+    .f-top-1 p span {
+        font-size: 17px;
+    }
+    
+    .f-top-1 a {
+        font-size: 18.5px;
+        margin: auto;
+        margin-top: 3px;
+    }
+    .f-top-1 a span {
+        font-size: 19.5px;
+    }
+    
+    .f-top-2 {
+        justify-items: right;
+    }
+    
+    .f-top-2 .company, .f-top-3 .social-media {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+    
+    .f-top-2 ul {
+        gap: 6px;
+    }
+    
+    .f-top-2 ul li a {
+        font-size: 18.5px;
+    }
+
+    .f-top-3 {
+        justify-items: left;
+        width: fit-content;
+    } 
+    
+    .f-top-3 .sm-app {
+        justify-content: center;
+        margin: auto;
+    }
+    
+    .sm-app .med-app {
+        width: 17px;
+        height: 17px;
+        padding: 8px;
+    }
+    
+    .footer-comp .copyright {
+        right: 50%;
+        transform: translateX(50%);
+        padding: 40px 0vw;
+        font-size: 18.5px;
+    }
+}
+
+@media (max-width: 685px) {
+    .footer-comp {
+        padding: 45px 5vw 20px;
+        grid-template-columns: 1fr;
+        column-gap: 110px;
+        row-gap: 60px;
+    }
+
+    .f-top-1 {
+        grid-column: 1 / 2;
+    }
+    
+    .f-top-1 a img {
+        width: min(30vw, 92px);
+    }
+    
+    .f-top-1 p span {
+        font-size: 16px;
+    }
+    
+    .f-top-2 {
+        justify-items: center;
+    }
+    
+    .f-top-2 .company, .f-top-3 .social-media {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    
+    .f-top-2 ul {
+        gap: 5px;
+    }
+
+    .f-top-3 {
+        justify-items: center;
+        width: auto;
+    } 
+    
+    .sm-app .med-app {
+        width: 17px;
+        height: 17px;
+        padding: 8px;
+    }
+    
+    .footer-comp .copyright {
+        position: relative;
+        transform: translateX(0%);
+        padding: 0px 2vw;
+        font-size: 18px;
+    }
+}
