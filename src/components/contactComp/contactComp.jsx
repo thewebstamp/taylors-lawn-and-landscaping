@@ -9,14 +9,14 @@ function ContactComp() {
         {
             icon: faPhone,
             form: 'Phone Number',
-            detail: '+1 423-383-1893',
-            openLink: "tel:+14233831893"
+            detail: '+1 870-530-4289',
+            openLink: "tel:+18705304289"
         },
         {
             icon: faEnvelope,
             form: 'Email',
-            detail: 'TaylorsLandL @gmail.com',
-            openLink: "mailto:TaylorsLandL@gmail.com?Subject=Project Enquiry"
+            detail: 'taylorslawncare21 @gmail.com',
+            openLink: "mailto:taylorslawncare21@gmail.com?Subject=Project Enquiry"
         }
     ];
 
@@ -42,11 +42,11 @@ function ContactComp() {
             </div>
             
             <div className="cc-base">
-                <img src={Images.thumbnail} alt="" />
+                <img src={Images.heroImg1} alt="" />
             </div>
 
             <div className="cc-socials">
-                <a href="https://web.facebook.com/taylorslawn" target='_blank'><FontAwesomeIcon className='ccs-icon' icon={faFacebookMessenger} /></a>
+                <a href="https://web.facebook.com/TLCLAWN21" target='_blank'><FontAwesomeIcon className='ccs-icon' icon={faFacebookMessenger} /></a>
                 <a href="#"><FontAwesomeIcon className='ccs-icon' icon={faInstagram} /></a>
             </div>
         </div>

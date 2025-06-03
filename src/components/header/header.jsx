@@ -44,9 +44,9 @@ function Header({home, about, service, contact}) {
             <img src={Images.heroImg1} alt="" id="website-img" />
             <a href="#" onClick={()=>{navigate("/")}}><img src={Images.ddr_logo} alt="" /></a>
             <div className="navigation-right">
-                <a href="tel:+14233831893" className="phone-contact">
+                <a href="tel:+18705304289" className="phone-contact">
                     <FontAwesomeIcon className="header-phone" icon={faPhone} />
-                    <p>+1 423-383-1893</p>
+                    <p>+1 870-530-4289</p>
                 </a>
                 <div className="nav-base">
                     <nav className='navigation' id='navigation'>

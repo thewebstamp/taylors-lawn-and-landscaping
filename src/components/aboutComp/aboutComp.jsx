@@ -47,8 +47,8 @@ function AboutComp() {
 
             <div className="about-comp-text" ref={aboutB}>
                 <div className="a-headline">ABOUT US</div>
-                <h2>Dedicated to Beautiful Yards, All Year</h2>
-                <p>At Taylor’s Lawn and Landscaping, Inc, we take pride in being your dependable, locally owned lawn care and landscaping team serving the Tri-Cities area. With years of hands-on experience and a deep commitment to our community, we provide professional, year-round services that keep your outdoor spaces looking their best</p>
+                <h2>Every Lawn Deserves TLC — and We Deliver It!</h2>
+                <p>We bring over 25 years of hands-on experience in landscaping, drainage solutions, and heavy equipment operation to every project we take on. Based in South Paragould, Arkansas, and proudly serving Northeast Arkansas (NEA) and surrounding areas, we specialize in transforming outdoor spaces with precision, creativity, and care</p>
                 <div className="about-bullet">
                     <div className="item">
                         <FontAwesomeIcon className='a-check' icon={faCheck} />

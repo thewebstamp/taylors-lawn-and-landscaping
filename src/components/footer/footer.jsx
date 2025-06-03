@@ -11,9 +11,9 @@ function Footer({home, about, contact }) {
         <div className="footer-comp">
             <div className="f-top-1">
                 <a href="#" onClick={()=>{navigate("/")}}><img src={Images.ddr_logo} alt="" /></a>
-                <p>Seasons Change. Our Care Doesn’t</p>
-                <a href="mailto:TaylorsLandL@gmail.com?Subject=Project Enquiry" target='_blank'><span>Email:</span>&nbsp; TaylorsLandL @gmail.com</a>
-                <a href="https://www.bing.com/maps?q=Bristol%2C+TN%2C+United+States%2C+Tennessee&FORM=HDRSC6&cp=36.531851~-82.209745&lvl=12.5" target='_blank'>Bristol, TN, United States, Tennessee</a>
+                <p>Where Your Lawn Gets the TLC It Deserves</p>
+                <a href="mailto:taylorslawncare21@gmail.com?Subject=Project Enquiry" target='_blank'><span>Email:</span>&nbsp; taylorslawncare21 @gmail.com</a>
+                <a href="https://www.bing.com/maps?q=5494+Highway+49+South+Paragould+Arkansas+72450&FORM=HDRSC6" target='_blank'>5494 Highway 49 South Paragould Arkansas 72450</a>
             </div>
 
             <div className="f-top-2">
@@ -31,11 +31,11 @@ function Footer({home, about, contact }) {
                 <div className="social-media">Social Media</div>
                 <div className="sm-app">
                     <a href="#"><FontAwesomeIcon className='med-app' icon={faInstagram} /></a>
-                    <a href="https://web.facebook.com/taylorslawn" target='_blank'><FontAwesomeIcon className='med-app' icon={faFacebookF} /></a>
+                    <a href="https://web.facebook.com/TLCLAWN21" target='_blank'><FontAwesomeIcon className='med-app' icon={faFacebookF} /></a>
                 </div>
             </div>
 
-            <p className="copyright">&copy;{new Date().getFullYear()} All Rights Reserved By Taylor's Lawn and Landscaping, Inc</p>
+            <p className="copyright">&copy;{new Date().getFullYear()} All Rights Reserved By Taylor's Lawn Care & Landscaping, LLC</p>
         </div>
     )
 }

@@ -14,8 +14,8 @@ function AboutHero() {
             
             <div className='ah-base'>
                 <div className='ah-headline'>LEARN ABOUT US</div>
-                <h2>Your Trusted Lawn and Landscape Care Experts</h2>
-                <p>At Taylor’s Lawn and Landscaping, Inc, we take pride in being your dependable, locally owned lawn care and landscaping team serving the Tri-Cities area. With years of hands-on experience and a deep commitment to our community, we provide professional, year-round services that keep your outdoor spaces looking their best—whether it’s springtime lawn maintenance, fall leaf cleanup, or winter snow removal. <br /><br />What started as a small mowing service has grown into a full-service landscaping company trusted by homeowners and businesses alike. From <b>weekly mowing and lawn care</b> to <b>custom landscape design, gutter cleaning</b>, and <b>seasonal snow plowing</b>, we handle every job with precision, care, and a personal touch</p>
+                <h2>Turning Overgrown Yards into Outdoor Showpieces</h2>
+                <p>At <b>Taylor’s Lawn Care & Landscaping, LLC</b>, we bring <b>over 25 years of hands-on experience</b> in landscaping, drainage solutions, and heavy equipment operation to every project we take on. Based in <b>South Paragould, Arkansas</b>, and proudly serving <b>Northeast Arkansas (NEA)</b> and surrounding areas, we specialize in transforming outdoor spaces with precision, creativity, and care. <br /><br />Whether you're dealing with poor drainage, need a stunning new landscape design, or want to enhance your property with rock work, privacy fencing, or a revitalized deck — we’ve got you covered. Our <b>faith-based, family-owned</b> business is built on honesty, reliability, and guaranteed results</p>
             </div>
         </div>
     )

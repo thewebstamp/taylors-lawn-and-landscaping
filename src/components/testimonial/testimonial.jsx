@@ -5,19 +5,19 @@ import { useRef, useEffect } from 'react';
 function Testimonial() {
     const testimonial = [
         {
-            name: 'SARAH M',
-            address: 'Johnson City, TN',
-            review: "Taylor’s Lawn and Landscaping transformed our yard! Reliable, professional, and always on time. Their team takes great care, and we couldn’t be happier with the results. They truly go above and beyond every visit"
+            name: 'TAMMIE W HESTER',
+            address: 'Jonesboro, AR',
+            review: "Billy is excellent!  He took my wild out of control flower bed and reigned it in and made it looks fresh and added lights, it is wonderful.  He worked hard, had the project completed promptly!  I would recommend him if you need anything done"
         },
         {
-            name: 'MIKE R',
-            address: 'Kingsport, TN',
-            review: 'Excellent attention to detail and great communication. Highly recommend for any landscaping needs in the Tri-Cities area! They listen closely to your needs and deliver exactly what you expect'
+            name: 'KIM WHITMAN',
+            address: 'Jonesboro, AR',
+            review: "Taylor's Lawn Care & Landscaping, LLC is the best service I’ve had since I moved to Jonesboro 15 years ago. They come on time, for a very fair price, and couldn’t be more helpful and proactive and keeping my lawn looking spectacular!"
         },
         {
-            name: 'EMILY T',
-            address: 'Bristol, TN',
-            review: "From weekly mowing to snow removal, Taylor’s has been our go-to for years. Friendly service and exceptional quality every season. Their dedication and consistency really set them apart from the rest"
+            name: 'BRENDA BRENDA',
+            address: 'Jonesboro, AR',
+            review: "My yard was a MESS! Taylor Lawn Care did an outstanding job and now it is beautiful!  They worked tirelessly and did everything I asked them to do and stayed exactly with the initial quote Billy gave me. Billy and Ricky were a blessing to me!"
         }
     ];
 
@@ -69,7 +69,7 @@ function Testimonial() {
             </div>
 
             <div className="base-rev">
-                {/* <a className='facebook-review' href="https://web.facebook.com/profile.php?id=61555744794312&sk=reviews" target='_blank'><img src={Images.facebookReviews} alt="" /></a> */}
+                <a className='facebook-review' href="https://web.facebook.com/TLCLAWN21/reviews" target='_blank'><img src={Images.review} alt="" /></a>
             </div>
         </div>
     )

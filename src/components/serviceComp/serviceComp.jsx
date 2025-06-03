@@ -10,34 +10,54 @@ function ServiceComp() {
     const navigate = useNavigate();
     const [ourServices, setOurServices] = useState([
         {
-            title: 'Lawn Mowing',
-            description: 'Reliable weekly mowing, trimming, and edging service',
-            image: Images.mowing
+            title: 'Lawn Care',
+            description: 'Mowing, trimming, fertilizing, and seasonal maintenance',
+            image: Images.lawn
         },
         {
-            title: 'Landscape Design',
-            description: 'Custom outdoor spaces that boost curb appeal',
-            image: Images.design
+            title: 'Landscaping Design',
+            description: 'Creative outdoor space planning and installation',
+            image: Images.landscaping
         },
         {
-            title: 'Leaf Removal',
-            description: 'Efficient fall cleanup of leaves and debris',
-            image: Images.fall
+            title: 'Drainage Solutions',
+            description: 'Prevent flooding with expert water management',
+            image: Images.drainage
         },
         {
-            title: 'Gutter Cleaning',
-            description: 'Protect your home with thorough gutter cleaning',
-            image: Images.gutter
+            title: 'Sod Installation',
+            description: 'Fresh sod for thick, healthy lawns',
+            image: Images.sod
         },
         {
-            title: 'Snow Removal',
-            description: 'Fast plowing and ice control for winter',
-            image: Images.snow
+            title: 'Privacy Fencing',
+            description: 'Durable wood fencing for privacy and security',
+            image: Images.fence
         },
         {
-            title: 'Property Maintenance',
-            description: 'Complete care for residential and commercial properties',
-            image: Images.maintenance
+            title: 'Deck Construction',
+            description: 'Build or restore beautiful, sturdy decks',
+            image: Images.deck
+        },
+        {
+            title: 'Sprinkler Systems',
+            description: 'Efficient irrigation for healthy plants',
+            image: Images.sprinkler
+        },
+        {
+            title: 'Hardscaping Work',
+            description: 'Patios, walkways, and retaining walls',
+            image: Images.hardscape
+        },
+        {
+            title: 'Tree Trimming',
+            description: 'Safe trimming and brush removal services',
+            image: Images.tree
+        },
+        {
+            title: 'Additional Services',
+            description: 'Gutter cleaning, leaf removal, pressure washing',
+            image: Images.additional
         }
     ]);
 
@@ -106,10 +126,10 @@ function ServiceComp() {
             <div className="s-up" ref={serviceT}>
                 <div className="s-heading">
                     <div className="s-headline">OUR SERVICES</div>
-                    <h2>Lawn and Landscaping Services You Can Rely On</h2>
+                    <h2>Lawn and Landscaping Services You Can Trust Always</h2>
                 </div>
                 <div className="s-text">
-                    <p>We provide comprehensive outdoor care solutions tailored to the Tri-Cities area’s unique seasons and landscapes. <br /><b>Explore our full list of services below:</b></p>
+                    <p>At Taylor’s Lawn Care & Landscaping, we provide comprehensive solutions to keep your outdoor spaces beautiful, functional, and healthy. <br /><b>Explore our full list of services below:</b></p>
                     <a href="#" onClick={()=>{navigate("/contact")}}>Contact Us</a>
                 </div>
             </div>

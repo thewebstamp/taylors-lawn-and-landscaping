@@ -9,7 +9,7 @@ function Portfolio() {
     const navigate = useNavigate();
     const [portfolio, setPortfolio] = useState([
         Images.p1, Images.p2, Images.p3, Images.p4, Images.p5, Images.p6, Images.p7, Images.p8, Images.p9,
-        Images.p10, Images.p11, Images.p12, Images.p13
+        Images.p10, Images.p11, Images.p12, Images.p13, Images.p14, Images.p15
     ]);
 
     function pLeft() {

@@ -7,17 +7,17 @@ function Questions() {
         {
             id: 0,
             question: "What areas do you serve?",
-            answer: "At Wilkerson Taylor's Lawn and Landscaping, Inc, we proudly serve home owners and property owners across Bristol, TN, and nearby areas. If you're unsure whether we serve your specific area, please don't hesitate to contact us. We'll be happy to help",
+            answer: "At Wilkerson Taylor's Lawn Care & Landscaping, LLC, Inc, we proudly serve home owners and property owners across Northeast Arkansas. If you're unsure whether we serve your specific area, please don't hesitate to contact us. We'll be happy to help",
         },
         {
             id: 1,
             question: "Do you offer any warranties or guarantees on your work?",
-            answer: "Yes, at Wilkerson Taylor's Lawn and Landscaping, Inc, we stand behind the quality of our work and offer comprehensive warranties and guarantees. Our warranties and guarantees demonstrate our commitment to delivering exceptional quality and service",
+            answer: "Yes, at Wilkerson Taylor's Lawn Care & Landscaping, LLC, Inc, we stand behind the quality of our work and offer comprehensive warranties and guarantees. Our warranties and guarantees demonstrate our commitment to delivering exceptional quality and service",
         },
         {
             id: 2,
             question: "How long does a typical project take to complete?",
-            answer: "The duration of a typical project with Wilkerson Taylor's Lawn and Landscaping, Inc can vary depending on the scope and complexity of the work. We'll work closely with you to create a personalized project schedule and ensure that you're informed every step of the way",
+            answer: "The duration of a typical project with Taylor's Lawn Care & Landscaping, LLC, Inc can vary depending on the scope and complexity of the work. We'll work closely with you to create a personalized project schedule and ensure that you're informed every step of the way",
         },
         {
             id: 3,
@@ -58,7 +58,7 @@ function Questions() {
         <div className="faquestions" ref={questionA}>
             <div className="faq-headline">FAQ</div>
             <h2>Frequently Asked Questions</h2>
-            <p className='fa-para'>Discover the answers to Wilkerson Powerwashing and Landscaping most frequently asked questions.</p>
+            <p className='fa-para'>Discover the answers to Taylor's Lawn Care & Landscaping, LLC most frequently asked questions.</p>
             <div className="faquestions-wrap">
                 {faQuestions.map((quest, i) => {
                     return (

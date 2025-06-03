@@ -61,8 +61,8 @@ function SetApart() {
     return (
         <div className="set-apart-wrap">
             <div className="sa-top" ref={setApartT}>
-                <div className="sa-headline">TAYLOR'S LAWN & LANDSCAPING</div>
-                <h2>Discover Why Locals Rely on Taylor’s Lawn Care</h2>
+                <div className="sa-headline">TAYLOR'S LAWN CARE & LANDSCAPING, LLC</div>
+                <h2>Trusted Experts Delivering Quality Lawn and Landscaping Services</h2>
                 <div className="sa-cards">
                     {sCards.map((card, i) => (
                         <div key={i} className="card">

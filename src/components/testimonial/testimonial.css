@@ -114,7 +114,7 @@
 }
 
 .testimonial-comp a img {
-    width: 120px;
+    width: 150px;
     transition: 0.5s;
 }
 .testimonial-comp a img:hover {
@@ -178,7 +178,7 @@
     }
     
     .testimonial-comp a img {
-        width: 90px;
+        width: 120px;
     }
 }
 
@@ -231,6 +231,6 @@
     }
     
     .testimonial-comp a img {
-        width: 80px;
+        width: 110px;
     }
 }
