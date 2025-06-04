@@ -67,7 +67,7 @@ function Portfolio() {
     return (
         <div className="portfolio-comp" id='portfolio' ref={portfolioA}>
             <div className="p-headline">PORTFOLIO</div>
-            <h2>Our Work Speaks for Itself</h2>
+            <h2>Our Work Speaks for Itself.</h2>
             <div className="portfolio-images">
                 <div className="image-wrap">
                     <div className="p-imgs">

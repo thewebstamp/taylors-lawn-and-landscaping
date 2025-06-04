@@ -89,23 +89,25 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .s-base .top {
     padding-top: 70px;
     width: 100%;
-    overflow-x: scroll;
-    scroll-behavior: smooth;
+    /* overflow-x: scroll;
+    scroll-behavior: smooth; */
 }
-.s-base .top::-webkit-scrollbar {
+/* .s-base .top::-webkit-scrollbar {
     display: none;
-}
+} */
 
 .top .s-top-case {
-    width: fit-content;
-    display: flex;
-    gap: 30px;
+    /* width: fit-content; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 90px;
+    justify-items: center;
 }
 
 .s-top-case .items {
@@ -146,9 +148,9 @@
     padding: 13px 15px 25px;
     width: 80%;
     margin: auto;
-    background: var(--sBackground);
+    background: var(--background);
     border-radius: 15px;
-    border: 3px solid var(--background);
+    border: 3px solid var(--sBackground);
     transform: translateX(50%);
 }
 
@@ -156,23 +158,23 @@
     font-family: "Outfit", serif;
     margin-bottom: 7px;
     font-size: 19.5px;
-    color: var(--black);
+    color: var(--sBackground);
 }
 
 .item-card p {
     font-family: "Josefin Sans", serif;
     font-size: 17.5px;
-    color: var(--background);
+    color: rgb(186, 186, 186);
 }
 
 .items img {
     width: 100%;
-    border: 3px solid rgba(0, 0, 0, 0.7);
+    border: 3px solid var(--sBackground);
     border-radius: 15px;
 }
 
 .s-base .control {
-    display: flex;
+    display: none;
     gap: 10px;
     margin: 25px auto 0;
 }
@@ -255,6 +257,11 @@
         margin-top: 50px;
     }
     
+    .top .s-top-case {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 80px;
+}
+    
     .s-top-case .items {
         width: min(300px, 37vw);
     }
@@ -274,7 +281,7 @@
         top: -60px;
         padding: 8px 13px 20px;
         border-radius: 10px;
-        border: 2px solid var(--background);
+        border: 2px solid var(--sBackground);
     }
     
     .item-card h3 {
@@ -287,7 +294,7 @@
     }
     
     .items img {
-        border: 2px solid rgba(0, 0, 0, 0.7);
+        border: 2px solid var(--sBackground);
         border-radius: 10px;
     }
     
@@ -329,7 +336,8 @@
     }
 
     .top .s-top-case {
-        gap: 20px;
+        grid-template-columns: 1fr;
+        gap: 70px;
     }
     
     .service-comp .s-base {
@@ -341,7 +349,7 @@
     }
     
     .s-top-case .items {
-        width: min(280px, 85vw);
+        width: 85vw;
     }
     
     @keyframes s-slide-left {

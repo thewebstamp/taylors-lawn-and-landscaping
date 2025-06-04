@@ -7,23 +7,23 @@ import { faMagnifyingGlass, faUser, faStamp, faCalendar } from '@fortawesome/fre
 function SetApart() {
     const sCards = [
         {
-            title: "Attention to detail",
-            description: "We ensure that every aspect of the project is completed to the highest standards",
+            title: "Attention to detail.",
+            description: "We ensure that every aspect of the project is completed to the highest standards.",
             icon: faMagnifyingGlass
         },
         {
-            title: "Customer-centric approach",
-            description: "We offer tailored solutions to meet each client's unique needs and preferences",
+            title: "Customer-centric approach.",
+            description: "We offer tailored solutions to meet each client's unique needs and preferences.",
             icon: faUser
         },
         {
-            title: "Quality materials & workmanship",
-            description: "We use only the best materials and employ skilled tradespeople to deliver the highest of standards",
+            title: "Quality materials & workmanship.",
+            description: "We use only the best materials and employ skilled tradespeople to deliver the highest of standards.",
             icon: faStamp
         },
         {
-            title: "Reliability and punctuality",
-            description: "We have a reputation for being reliable, punctual, and communicative to customers",
+            title: "Reliability and punctuality.",
+            description: "We have a reputation for being reliable, punctual, and communicative to customers.",
             icon: faCalendar
         }
     ];
@@ -61,8 +61,8 @@ function SetApart() {
     return (
         <div className="set-apart-wrap">
             <div className="sa-top" ref={setApartT}>
-                <div className="sa-headline">TAYLOR'S LAWN CARE & LANDSCAPING, LLC</div>
-                <h2>Trusted Experts Delivering Quality Lawn and Landscaping Services</h2>
+                <div className="sa-headline">TAYLOR'S LAWN CARE & LANDSCAPING</div>
+                <h2>Trusted Experts Delivering Quality Lawn and Landscaping Services.</h2>
                 <div className="sa-cards">
                     {sCards.map((card, i) => (
                         <div key={i} className="card">

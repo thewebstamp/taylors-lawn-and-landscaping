@@ -48,7 +48,7 @@ function AboutComp() {
             <div className="about-comp-text" ref={aboutB}>
                 <div className="a-headline">ABOUT US</div>
                 <h2>Every Lawn Deserves TLC — and We Deliver It!</h2>
-                <p>We bring over 25 years of hands-on experience in landscaping, drainage solutions, and heavy equipment operation to every project we take on. Based in South Paragould, Arkansas, and proudly serving Northeast Arkansas (NEA) and surrounding areas, we specialize in transforming outdoor spaces with precision, creativity, and care</p>
+                <p>We bring over 25 years of hands-on experience in landscaping, drainage solutions, and heavy equipment operation to every project we take on. Based in South Paragould, Arkansas, and proudly serving Northeast Arkansas (NEA) and surrounding areas, we specialize in transforming outdoor spaces with precision, creativity, and care.</p>
                 <div className="about-bullet">
                     <div className="item">
                         <FontAwesomeIcon className='a-check' icon={faCheck} />

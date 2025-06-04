@@ -184,6 +184,10 @@
     .f-top-1 {
         grid-column: 1 / 2;
     }
+
+    .f-top-1 #location {
+        margin-top: 13px;
+    }
     
     .f-top-1 a img {
         width: min(30vw, 92px);

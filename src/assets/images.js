@@ -6,10 +6,10 @@ import landscaping from './landscaping-min.jpg';
 import drainage from './drainage-min.jpg';
 import sod from './sod-min.jpg';
 import fence from './fence-min.jpg';
-import deck from './deck-min.jpg';
+import dirt from './dirt-min.jpg';
 import sprinkler from './sprinkler-min.jpg';
-import hardscape from './hardscape-min.jpg';
-import tree from './tree-min.jpg';
+import stone from './stone-min.jpg';
+import dSolution from './dSolution-min.jpg';
 import additional from './additional-min.jpg';
 import heroBackground from './herobackground-min.jpg';
 import heroImg1 from './himg-1-min.jpg';
@@ -48,10 +48,10 @@ export const Images = {
     drainage,
     sod,
     fence,
-    deck,
+    dirt,
     sprinkler,
-    hardscape,
-    tree,
+    stone,
+    dSolution,
     additional,
     heroBackground,
     heroImg1,

@@ -40,7 +40,7 @@ function Reachout() {
             <div className="r-top" ref={reachoutT}>
                 <div className="r-headline">REACH OUT TO US</div>
                 <h2>Ready to Transform Your Outdoors? Reach Out Today!</h2>
-                <p>Whether you need dependable <b>weekly lawn care, seasonal leaf clean-up, privacy fencing, sprinkler system installation, or drainage solutions</b>, we’re here to help — fast, local, and ready when you are</p>
+                <p>Whether you need dependable <b>weekly lawn care, seasonal leaf clean-up, privacy fencing, sprinkler system installation, or drainage solutions</b>, we’re here to help — fast, local, and ready when you are.</p>
                 <a href="#" onClick={() => { navigate("/contact") }}>See Contact Info</a>
             </div>
 

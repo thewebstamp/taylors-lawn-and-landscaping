@@ -24,7 +24,7 @@ function ContactComp() {
         <div className="contact-comp">
             <div className="cc-top">
                 <div className="cc-headline">CONTACT US</div>
-                <h2>Get in Touch for Fast, Reliable Service</h2>
+                <h2>Get in Touch for Fast, Reliable Service.</h2>
                 <div className="cc-info">
                     {contact.map((info, i) => (
                         <div key={i} className="cc-item">

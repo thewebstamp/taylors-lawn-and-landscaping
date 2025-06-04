@@ -7,7 +7,7 @@ function Testimonial() {
         {
             name: 'TAMMIE W HESTER',
             address: 'Jonesboro, AR',
-            review: "Billy is excellent!  He took my wild out of control flower bed and reigned it in and made it looks fresh and added lights, it is wonderful.  He worked hard, had the project completed promptly!  I would recommend him if you need anything done"
+            review: "Billy is excellent!  He took my wild out of control flower bed and reigned it in and made it looks fresh and added lights, it is wonderful.  He worked hard, had the project completed promptly!  I would recommend him if you need anything done."
         },
         {
             name: 'KIM WHITMAN',
@@ -51,8 +51,8 @@ function Testimonial() {
             </div>
 
             <div className="t-base" ref={testimonialB}>
-                <div className="t-headline">⭐⭐⭐⭐⭐ WHAT OUR CLIENTS SAY</div>
-                <h2>We Let Our Work & Our Clients Do The Talking</h2>
+                <div className="t-headline">⭐⭐⭐⭐⭐ WHAT OUR CLIENTS SAY!</div>
+                <h2>We Let Our Work & Our Clients Do The Talking.</h2>
                 <div className="testimonial-wrap">
                     {testimonial.map((review, i) => (
                         <div className="t-reviews" key={i}>

@@ -11,9 +11,9 @@ function Footer({home, about, contact }) {
         <div className="footer-comp">
             <div className="f-top-1">
                 <a href="#" onClick={()=>{navigate("/")}}><img src={Images.ddr_logo} alt="" /></a>
-                <p>Where Your Lawn Gets the TLC It Deserves</p>
+                <p>Where Your Lawn Gets the TLC It Deserves.</p>
                 <a href="mailto:taylorslawncare21@gmail.com?Subject=Project Enquiry" target='_blank'><span>Email:</span>&nbsp; taylorslawncare21 @gmail.com</a>
-                <a href="https://www.bing.com/maps?q=5494+Highway+49+South+Paragould+Arkansas+72450&FORM=HDRSC6" target='_blank'>5494 Highway 49 South Paragould Arkansas 72450</a>
+                <a id='location' href="https://www.bing.com/maps?q=5494+Highway+49+South+Paragould+Arkansas+72450&FORM=HDRSC6" target='_blank'><b>Address:</b>&nbsp; 5494 Highway 49 South Paragould Arkansas 72450.</a>
             </div>
 
             <div className="f-top-2">
@@ -35,7 +35,7 @@ function Footer({home, about, contact }) {
                 </div>
             </div>
 
-            <p className="copyright">&copy;{new Date().getFullYear()} All Rights Reserved By Taylor's Lawn Care & Landscaping, LLC</p>
+            <p className="copyright">&copy;{new Date().getFullYear()} All Rights Reserved By Taylor's Lawn Care & Landscaping, LLC.</p>
         </div>
     )
 }

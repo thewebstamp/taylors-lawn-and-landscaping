@@ -13,8 +13,8 @@ function Hero() {
                 </div>
                 <div className="hero">
                     <div className="hero-top">
-                        <div className="small-headline">TAYLOR'S LAWN CARE & LANDSCAPING, LLC</div>
-                        <h1>Trusted Lawn Care & Landscaping Experts in Arkansas</h1>
+                        <div className="small-headline">TAYLOR'S LAWN CARE & LANDSCAPING</div>
+                        <h1>Trusted Lawn Care & Landscaping Experts in Arkansas.</h1>
                         <p><b>Where Your Lawn Gets the TLC It Deserves</b>. <br />Over 25 Years of Experience in Landscaping, Drainage Solutions, Sod Installation, Fencing & More!</p>
                         <div className="hero-btn">
                             <a id='hero-f-btn' className='hero-f-btn' onClick={() => {navigate('/contact')}} href="#">Get Free Quote</a>
