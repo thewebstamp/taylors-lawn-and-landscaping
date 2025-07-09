@@ -4,11 +4,19 @@ import { Images } from '../../assets/images';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import { useEffect, useRef } from 'react';
+import ReactGA from 'react-ga4';
 
 function AboutComp() {
     const navigate = useNavigate();
     const aboutT = useRef();
     const aboutB = useRef();
+    const handleClick = () => {
+        ReactGA.event({
+            category: 'Button',
+            action: 'Click',
+            label: 'About Button'
+        });
+    };
 
     function slideUp() {
         if (window.location.pathname == "/") {
@@ -67,7 +75,7 @@ function AboutComp() {
                         <span>good Rates</span>
                     </div>
                 </div>
-                <a href="#" onClick={() => { navigate("/about") }}>Learn &nbsp;More</a>
+                <a href="#" onClick={() => {handleClick(); navigate("/about") }}>Learn &nbsp;More</a>
             </div>
         </div>
     )

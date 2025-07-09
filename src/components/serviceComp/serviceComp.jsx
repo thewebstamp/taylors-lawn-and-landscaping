@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { useRef, useState, useEffect } from 'react';
+import ReactGA from 'react-ga4';
 
 function ServiceComp() {
     const navigate = useNavigate();
@@ -60,6 +61,13 @@ function ServiceComp() {
             image: Images.additional
         }
     ]);
+    const handleClick = () => {
+        ReactGA.event({
+            category: 'Button',
+            action: 'Click',
+            label: 'Serices-Contact  Button'
+        });
+    };
 
     function scrollLeft() {
         const sItems = document.querySelectorAll('.items');
@@ -130,7 +138,7 @@ function ServiceComp() {
                 </div>
                 <div className="s-text">
                     <p>At Taylor’s Lawn Care & Landscaping, we provide comprehensive solutions to keep your outdoor spaces beautiful, functional, and healthy. <br /><b>Explore our full list of services below:</b></p>
-                    <a href="#" onClick={()=>{navigate("/contact")}}>Contact Us</a>
+                    <a href="#" onClick={()=>{handleClick(); navigate("/contact")}}>Contact Us</a>
                 </div>
             </div>
 
@@ -155,7 +163,7 @@ function ServiceComp() {
                         <FontAwesomeIcon id='s-control-r' icon={faArrowRight} onClick={scrollLeft} />
                     </div>
                 </div>
-                <a href="#" onClick={()=>{navigate("/contact")}}>Contact Us</a>
+                <a href="#" onClick={()=>{handleClick(); navigate("/contact")}}>Contact Us</a>
             </div>
         </div>
     )

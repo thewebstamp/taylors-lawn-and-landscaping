@@ -4,6 +4,7 @@ import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Images } from '../../assets/images';
+import ReactGA from 'react-ga4';
 
 function Portfolio() {
     const navigate = useNavigate();
@@ -11,6 +12,13 @@ function Portfolio() {
         Images.p1, Images.p2, Images.p3, Images.p4, Images.p5, Images.p6, Images.p7, Images.p8, Images.p9,
         Images.p10, Images.p11, Images.p12, Images.p13, Images.p15
     ]);
+    const handleClick = () => {
+        ReactGA.event({
+            category: 'Button',
+            action: 'Click',
+            label: 'Gallery Button'
+        });
+    };
 
     function pLeft() {
         const pImage = document.querySelectorAll('.p-image-sc');
@@ -82,7 +90,7 @@ function Portfolio() {
                     <FontAwesomeIcon id='p-control-l' icon={faArrowLeft} onClick={pRight} />
                     <FontAwesomeIcon id='p-control-r' icon={faArrowRight} onClick={pLeft} />
                 </div>
-                <a href="#" onClick={()=>{navigate("/contact")}}>Call Us Today</a>
+                <a href="#" onClick={()=>{handleClick(); navigate("/contact")}}>Call Us Today</a>
             </div>
         </div>
     )

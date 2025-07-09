@@ -1,9 +1,25 @@
 import './hero.css';
 import { Images } from '../../assets/images';
 import { useNavigate } from 'react-router-dom';
+import ReactGA from 'react-ga4';
 
 function Hero() {
     const navigate = useNavigate();
+    const handleClick = () => {
+        ReactGA.event({
+            category: 'Button',
+            action: 'Click',
+            label: 'Services/Hero Request Button'
+        });
+    };
+    const handlequote = () => {
+        ReactGA.event({
+            category: 'Button',
+            action: 'Click',
+            label: 'Quote/Hero Request Button'
+        });
+    };
+
 
     return (
         <div className="hero-wrap">
@@ -17,8 +33,8 @@ function Hero() {
                         <h1>Trusted Lawn Care & Landscaping Experts in Arkansas.</h1>
                         <p><b>Where Your Lawn Gets the TLC It Deserves</b>. <br />Over 25 Years of Experience in Landscaping, Drainage Solutions, Sod Installation, Fencing & More!</p>
                         <div className="hero-btn">
-                            <a id='hero-f-btn' className='hero-f-btn' onClick={() => {navigate('/contact')}} href="#">Get Free Quote</a>
-                            <a id='hero-s-btn' className='hero-s-btn' href="#services">See Services</a>
+                            <a id='hero-f-btn' className='hero-f-btn' onClick={() => { handlequote(); navigate('/contact') }} href="#">Get Free Quote</a>
+                            <a id='hero-s-btn' className='hero-s-btn' href="#services" onClick={handleClick}>See Services</a>
                         </div>
                     </div>
 
